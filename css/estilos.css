@@ -1,0 +1,458 @@
+*{
+        /*Estilo General*/
+        margin:0;
+        padding:0;
+}
+
+.cabecera{
+height: 180px;
+width: 100%;
+}
+/*Personalización de Bodys*/
+body{
+    background-color: rgb(33, 116, 172);
+    overflow-x: hidden;
+}
+/*
+#BodyIndex{
+    background-image: url(https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000_960_720.jpg);
+    background-position: center;
+}
+*/
+
+  ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+  }
+
+  /*Crea la lista horizontal con espacio*/
+  li {
+    display:inline-block;
+    float: none;
+    margin-right: 1px;
+  }
+
+  /* Estilos para los link */
+  li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
+    transition:all 0.5s ease;
+  }
+
+  /* estados hover de los link */
+  li:hover a {
+    background: #5519c5;
+  }
+
+  /* estilos del dropdown */
+  li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  /* estilos del estado hover del dropdown*/
+  li:hover ul a:hover {
+    background: #5519c5;
+    color: #fff;
+  }
+
+  /*Oculta el dropdown*/
+  li ul {
+    display: none;
+  }
+
+  /* Pone el dropdown en vertical */
+  li ul li {
+    display: block;
+    float: none;
+  }
+
+  /* Previene el texto wrapping */
+  li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+  }
+
+  /* Aparace el dropdown en hover*/
+  ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+  }
+
+  /* Estilo de .muestra-menu */
+  .show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #5519c5;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+    transition:all 0.5s ease;
+  }
+
+
+  /*Oculta el checkbox*/
+  input[type=checkbox]{
+      display: none;
+  }
+
+  /* muestra el menu cuando el checkbox is checked*/
+  input[type=checkbox]:checked ~ #menu{
+      display: block;
+  }
+
+  .principal{
+    height: 350px;
+  }
+  .piePagina{
+    height: 100px;
+    width: 100%;
+    /*background-color:white ;*/
+    color: #2f3036;
+    /*border: #ab4493 solid;*/
+}
+
+/*Defino estilo de grilla*/
+.container {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: repeat(6, 100px);
+  grid-gap:1rem;
+  grid-template-areas: "box1 box1 box1"  "box2 box3 box4" "box5 box5 box5";
+  
+}
+
+.box-1 {
+  grid-area: box1;
+  background-color:red;
+  background-image: url(../img/cabecera.png);
+  border: white solid;
+  background-size: cover;
+  display: flex;
+  align-items:flex-end;
+  }
+  .box-2 {
+  grid-area: box2;
+  background-color:violet;
+  background-image: url(../img/horizonte.jpg);
+  border: white solid;
+  background-size: contain;
+  }
+  .box-3 {
+  grid-area: box3;
+  background-color:green;
+  background-image: url(../img/tecnologia.png);
+  border: white solid;
+  background-size: cover;
+  }
+  .box-4 {
+  grid-area: box4;
+  background-color:yellow;
+  background-image: url(../img/equipo.jpg);
+  border: white solid;
+  background-size: cover;
+  }
+  .box-5 {
+  grid-area: box5;
+  background-color:lightgray;
+  background-image: url(../img/consultoria.jpg);
+  border: white solid;
+  background-size: contain;
+  }
+
+/*Estilos de la pagina Contacto*/
+#BodyContacto{
+  height: 100%; 
+  font-family:Arial, Helvetica, sans-serif; /* : 'Noto Sans', sans-serif;*/
+  background-color: rgb(33, 116, 172);
+}
+
+
+.contact_form{  
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+.contenedor{  
+  width: auto;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+.contenedor_nosotros{
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  width: auto;
+  height: 600px;
+  margin: 10px;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+
+}
+
+.contenedor_servicios{
+  background-image: url(../img/tecnologia2.jpg);
+  background-size: cover;
+  width: auto;
+  height: 600px;
+  margin: 10px;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+
+}
+
+.contenedor_soluciones{
+  background-image: url(../img/soluciones.jpg);
+  background-size:cover;
+  width: auto;
+  height: 600px;
+  margin: 10px;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+
+}
+
+.contenedor h2{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: large;
+  color: rgb(33, 116, 172);
+}
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: rgb(33, 116, 172); 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color:rgb(33, 116, 172); 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: rgb(33, 116, 172); 
+  border-color: rgb(33, 116, 172)493; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+  color: #fff; 
+}
+
+
+span{
+  color: #ab4493; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: rgb(33, 116, 172);
+}
+
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+/* Estilos responsive */
+
+  /*Menu responsive*/
+
+  @media screen and (min-width: 300px) and (max-width : 760px) {
+    .cabecera{
+      height: 400px;
+      width: 100%;
+      }
+  }
+  @media screen and (max-width : 760px){
+    /*Hace que el dropdown links aparezcan en linea */
+    ul {
+      position: static;
+      display: none;
+    }
+    /*Crea espacio vertical */
+    li {
+      margin-bottom: 1px;
+    }
+    /* crea todo el menu links  ancho full */
+    ul li, li a {
+      width: 100%;
+    }
+    /*Display '.muestra-menu' link*/
+    .show-menu {
+      display:block;
+    }
+  }
+
+  /*Grilla Responsive - Tablet*/
+  @media only screen and (min-width: 768px) {
+  
+    .container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+  .box-1 {
+    grid-row: 1 / 2;
+    grid-column: 3 / 5;
+  }
+
+  .box-2 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+  }
+
+  .box-3 {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+  }
+ 
+  .box-4 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .box-5 {
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+  }
+}
+
+/*Grilla Responsive - Laptop*/
+@media only screen and (min-width: 1024px) {
+
+  .container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .principal{
+    height: 700px; /*bajo el pie de pagina para darle espacio al principal*/
+  }
+  .box-1 {
+    grid-column: 1 / span 3;
+    grid-row: 1 / 2;
+  }
+  .box-2 {
+    grid-column: 1 / span 3;
+    grid-row: 2 / 3;
+  }
+    .box-3 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 6;
+  }
+ 
+  .box-4 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 6;
+  }
+
+  .box-5 {
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+  }
+}
+
+
