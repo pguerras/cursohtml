@@ -122,6 +122,13 @@ body{
     /*background-color:white ;*/
     color: #2f3036;
     /*border: #ab4493 solid;*/
+    transform: translate(10px, 20px);/*Traslado el mensaje*/
+}
+
+/*Defino estilo de parrafo*/
+.parrafo{
+  background-color: aqua;
+  height: 40px;
 }
 
 /*Defino estilo de grilla*/
@@ -134,21 +141,36 @@ body{
   
 }
 
+/*Animación*/
+@keyframes un_efecto {
+  0% {background-image: url(../img/cabecera.png); }
+  25%{background-image: url(../img/tecnologia.png) }
+  50%{background-image: url(../img/cabecera.png); }
+  75%{ background-image: url(../img/tecnologia.png)}
+  100%{ background-image: url(../img/cabecera.png);}
+}
+
+
 .box-1 {
   grid-area: box1;
   background-color:red;
-  background-image: url(../img/cabecera.png);
+  /*background-image: url(../img/cabecera.png);*/
   border: white solid;
   background-size: cover;
   display: flex;
   align-items:flex-end;
+  animation-name: un_efecto;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 4s;
+  animation-delay: 0s;
   }
   .box-2 {
   grid-area: box2;
   background-color:violet;
-  background-image: url(../img/horizonte.jpg);
+  background-image: url(../img/fondo.jpg);
   border: white solid;
-  background-size: contain;
+  background-size: cover;
   }
   .box-3 {
   grid-area: box3;
@@ -167,7 +189,8 @@ body{
   .box-5 {
   grid-area: box5;
   background-color:lightgray;
-  background-image: url(../img/consultoria.jpg);
+  /*background-image: url(../img/consultoria.jpg);*/
+  background-image: linear-gradient(rgb(55, 0, 255), yellow);
   border: white solid;
   background-size: contain;
   }
@@ -203,7 +226,7 @@ body{
 }
 
 .contenedor_nosotros{
-  background-image: url(../img/fondo.jpg);
+  background-image: url(../img/nosotros.jpg);
   background-size: cover;
   width: auto;
   height: 600px;
@@ -217,7 +240,7 @@ body{
 }
 
 .contenedor_servicios{
-  background-image: url(../img/tecnologia2.jpg);
+  background-image: url(../img/tecnologia3.jpeg);
   background-size: cover;
   width: auto;
   height: 600px;
